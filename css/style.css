@@ -6,10 +6,12 @@ body{
     padding: 0;
     
   }
+  
   header{
-    background-color: #3f6d99;
+    background-color: #09376b;
     color: white;
   }
+  
   h1{
     font-size: 50px;
     line-height: 1;
@@ -17,23 +19,32 @@ body{
     text-align: center;
     color: white;
   }
+
   .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 15px;
     grid-column-gap: 15px;
     grid-row-start: 2;
-
   }
 
+.flex h2{
+    text-transform: uppercase;
+}
+.flex h3{
+    font-style: italic;
+    color: #09376b;
+}
   nav a:hover,nav a:focus{
     text-decoration: underline;
     border: solid 2px;
     color: white;
   }
+  
   nav a{
     color: white;
   }
+  
   header nav{
     color: white;
     padding-top: 15px;
@@ -57,3 +68,4 @@ body{
   *:focus{
     border: 2px solid;
   }
+ 
