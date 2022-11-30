@@ -4,7 +4,7 @@ body{
   line-height: 1.15;
   margin: 0px;
   padding: 0px;
-  
+  font-family: "Lato";
 }
 
 header{
@@ -36,8 +36,6 @@ h1{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  /* margin: auto;
-  padding: auto; */
   margin: 20px;
   padding: 20px;
 }
@@ -148,13 +146,15 @@ header nav{
 .services {
   text-align: center;
 } */
-
+.col{
+  background-color: white;
+}
 .community{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  border: 2px black solid;
+ background-color: white;
   padding-bottom: 25px;
   padding-top: 25px;
 }
@@ -170,11 +170,11 @@ header nav{
 .comm{
   padding: 10px;
   margin: auto;
-
 }
 .services h2{
   text-align: center;
   text-decoration: underline;
+
 }
 /* .services{
   padding-left: 400px;
@@ -202,7 +202,6 @@ header nav{
 .col{ 
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
   padding: 20px;
   
 }
@@ -212,6 +211,7 @@ header nav{
   align-self: center;
   padding-left: 50px;
   padding-right: 50px;
+
 }
 .col2{
   justify-content: center;
@@ -220,20 +220,18 @@ header nav{
   margin: 5px;
   
 }
+
 .cont{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border-style: solid;
+  background-color: white;
   padding: 25px;
 }
 .cont h2{
   text-decoration: underline;
 }
-.cont h3{
-  text-decoration: underline;
 
-}
 
 /* faq css */
 .faq{
@@ -241,8 +239,6 @@ header nav{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  padding: auto;
   background: white;
   margin: 20px;
   padding: 20px;
@@ -254,15 +250,45 @@ header nav{
   align-items: center;
   justify-content: center;
 }
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+footer a{
+  color: white;
+  font-weight: bold; 
+}
+
+@media screen and (min-width: 700px) {
+  .gallery img:nth-child(even){
+    border: 5px solid black;
+    
+  }
+  .gallery img:nth-child(odd){
+    border: 5px solid #09376b;
+  }
+  /* .gallery{
+
+  } */
+  .headshots{
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
 
 @media screen and (min-width: 900px) {
   .headshots{
     background: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 15px;
     grid-column-gap: 15px;
     grid-row-start: 2;
+    
   }
 
   .container {
@@ -275,5 +301,15 @@ header nav{
     align-items: center;
     
   }
+  
+  .gallery img:nth-child(even){
+    border: 5px solid #09376b;
+    
+  }
+  .gallery img:nth-child(odd){
+    border: 5px solid black;
+  }
+  
+
 
 }
