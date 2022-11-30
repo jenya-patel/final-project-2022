@@ -2,14 +2,17 @@ body{
   background-color: #d8c1aa;
   font-size: 18px;
   line-height: 1.15;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   
 }
 
 header{
   background-color: #09376b;
   color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 h1{
@@ -20,17 +23,8 @@ h1{
   color: white;
 }
 
-/* .gallery{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 15px;
-  grid-column-gap: 15px;
-  grid-row-start: 2;
-} */
-
 .headshots h2{
   text-transform: uppercase;
-  /* font-family: "Lato"; */
 }
 .headshots h3{
   font-style: italic;
@@ -40,9 +34,12 @@ h1{
 .gallery{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-  padding: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin: auto;
+  padding: auto; */
+  margin: 20px;
+  padding: 20px;
 }
 
 /* .flex{  --> Alpana's flex
@@ -55,9 +52,15 @@ h1{
 } */
 
 /* grid gallery for team headshots */
+
+.leadership{
+  background: white;
+}
+
 .headshots{
+  background: white;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-row-gap: 15px;
   grid-column-gap: 15px;
   grid-row-start: 2;
@@ -72,6 +75,19 @@ h1{
   align-items: center;
 }
 
+nav li{
+  display: inline;
+  padding: 40px 8px 20px 8px;
+}
+
+nav ul{
+  margin-top: 40px;
+}
+nav a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none; 
+}
 nav a:hover,nav a:focus{
   text-decoration: underline;
   border: solid 2px;
@@ -85,21 +101,20 @@ nav a{
 header nav{
   color: white;
   padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
-  text-align: left;
+  padding-bottom: 15px; 
+  text-align: center; 
 }
 
 .skip a{
-  padding: 6px;
   position: absolute;
+  top: -40px;
   color: white;
 }
 
 .skip a:focus{
   border: solid 2px;
   color: white;
+  top: 20px;
 }
 
 *:focus{
@@ -148,8 +163,8 @@ header nav{
 }
 .c1{
   padding-top: 50px;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
   align-items: right;
 }
 .comm{
@@ -161,21 +176,21 @@ header nav{
   text-align: center;
   text-decoration: underline;
 }
-.services{
-  border: black 2px solid;
+/* .services{
   padding-left: 400px;
   padding-right: 400px;
   margin: auto;
   padding-bottom: 50px;
-}
+} */
 
+/* general class for services */
 .serv{
-  padding: 250px;
+  padding: 50px;
 }
 
 .container {
   display: grid;
-	grid-template-columns: 300px 300px 300px;
+	grid-template-rows: 1fr 1fr 1fr;
 	text-align: center;
   grid-row-gap: 15px;
   grid-column-gap: 15px;
@@ -183,7 +198,8 @@ header nav{
   align-items: center;
   
 }
-.col{
+/* marketing */
+.col{ 
   justify-content: center;
   align-items: center;
   border: 2px solid black;
@@ -194,8 +210,8 @@ header nav{
   align-items: center;
   text-align: center;
   align-self: center;
-  padding-left: 450px;
-  padding-right: 450px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .col2{
   justify-content: center;
@@ -205,7 +221,7 @@ header nav{
   
 }
 .cont{
-  display: flexbox;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   border-style: solid;
@@ -221,7 +237,43 @@ header nav{
 
 /* faq css */
 .faq{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
   background: white;
-  margin: 50px 100px 50px 100px;
-  padding: 50px 100px 50px 100px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.questions{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  .headshots{
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-row-start: 2;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
 }
