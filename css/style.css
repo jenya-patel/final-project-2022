@@ -1,3 +1,4 @@
+
 body{
   background-color: #d8c1aa;
   font-size: 18px;
@@ -21,7 +22,10 @@ h1{
   padding: 50px 0;
   text-align: center;
   color: white;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 10s;
 }
+
 
 .headshots h2{
   text-transform: uppercase;
@@ -118,6 +122,7 @@ header nav{
 *:focus{
   border: 2px solid;
 }
+
 
 /* .who {
   border-style: dashed;
@@ -295,7 +300,34 @@ nav a:hover, nav a:focus{
 .faq a{
   color: #09376b;
 }
+.headshots img {
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  }
+  .headshots img:hover {
+  transform: scale(1.1);
+}
+.dark-mode1 {
+  background-color: gray;
+  color: white;
+}
+.dark-mode2 {
+  background-color: black;
+  color:white;
+}
 
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+  }
 
 @media screen and (min-width: 700px) {
   .gallery img:nth-child(even){
