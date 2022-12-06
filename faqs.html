@@ -40,9 +40,32 @@
 			<p>Rem focuses on working with female and minority owned small businesses in Ann Arbor and Detroit. Visit our clients page to see past projects.</p>
 		</div>
 		</div>
+		<form action="interest" action="/action_page.php">
+			<fieldset>
+			  <legend>Interest Form</legend>
+			  <div id="check">
+				<label>
+				  <input type="checkbox" name="subscribe" id="subscribe" onclick = interest(this)>
+				  Subscribe to our interest list!
+				</label>
+			  </div>
+	
+			  <div id="emailDiv">
+				<label>
+				  Email Address: 
+				  <input type="text" name="email" id="email">
+				  <input type="button" onclick="myFunction()" value="Submit">
+				</label>
+			  </div>
+	
+			</fieldset>
+		  </form>
+		  
 	</body>
 		<footer>
 			<p> <br>University of Michigan Rem and Company <br/>
 				<a href="https://www.linkedin.com/company/remandcompany/mycompany/">LinkedIn</a></p>
 		  </footer>
     </main>
+	<script src="js/faqs.js"></script>
+</html>
